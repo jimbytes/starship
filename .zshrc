@@ -2,6 +2,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+# Load a custom zshrc configurations file outside of this repo
+ZSHCUSTOMFILE=$HOME/.zshrc_custom
+if test -f "$ZSHCUSTOMFILE"; then
+   . $ZSHCUSTOMFILE
+fi
+
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 FZF_BASE="$HOME/.fzf"
@@ -12,7 +18,8 @@ if test -f "$ALIASFILE"; then
    . $ALIASFILE
 fi
 
-CUSTOMALIASFILE=$HOME/.zcustomalias
+# Load a custom alias configurations file outside of this repo
+CUSTOMALIASFILE=$HOME/.zalias_custom
 if test -f "$CUSTOMALIASFILE"; then
    . $CUSTOMALIASFILE
 fi

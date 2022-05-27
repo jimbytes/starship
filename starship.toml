@@ -86,127 +86,149 @@ when = """ command -v docker &> /dev/null; exit (echo $?); """
 ########################### Linux & macOS CUSTOMIZATION
 
 [custom.macos]
-when = """ test "$STARSHIP_OS" "==" "macos" """
 symbol = ' '
 style = "244 bold"
+when = '[ "$STARSHIP_OS" == "macos" ]'
+shell = ["sh", "--noprofile", "--norc"]
 os = "macos"
 
 [custom.kali]
-when = """ test "$STARSHIP_OS" "==" "kali" """
 symbol = 'ﴣ '
 style = "253 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "kali" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.arch]
-when = """ test "$STARSHIP_OS" "==" "arch" """
 symbol = ' '
 style = "021 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "arch" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.debian]
-when = """ test "$STARSHIP_OS" "==" "debian" """
 symbol = ' '
 style = "125 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "debian" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.raspbian]
-when = """ test "$STARSHIP_OS" "==" "raspbian" """
 symbol = ' '
 style = "125 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "raspbian" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.elementary]
-when = """ test "$STARSHIP_OS" "==" "elementary" """
 symbol = '  '
 style = "033 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "elementary" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.fedora]
-when = """ test "$STARSHIP_OS" "==" "fedora" """
 symbol = '  '
 style = "019 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "fedora" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.coreos]
-when = """ test "$STARSHIP_OS" "==" "coreos" """
 symbol = '  '
 style = "033 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "coreos" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.gentoo]
-when = """ test "$STARSHIP_OS" "==" "gentoo" """
 symbol = '  '
 style = "105 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "gentoo" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.mageia]
-when = """ test "$STARSHIP_OS" "==" "mageia" """
 symbol = '  '
 style = "025 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "mageia" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.centos]
-when = """ test "$STARSHIP_OS" "==" "centos" """
 symbol = '  '
 style = "090 bold"
+when = '[ "$STARSHIP_OS" == "centos" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.opensuse]
-when = """ test "$STARSHIP_OS" "==" "opensuse" """
 symbol = '  '
 style = "070 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "opensuse" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.sabayon]
-when = """ test "$STARSHIP_OS" "==" "sabayon" """
 symbol = '  '
 style = "251 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "sabayon" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.slackware]
-when = """ test "$STARSHIP_OS" "==" "slackware" """
 symbol = '  '
 style = "105 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "slackware" ]'
+shell = ["sh", "--noprofile", "--norc"]
+
 
 [custom.linuxmint]
-when = """ test "$STARSHIP_OS" "==" "linuxmint" """
 symbol = '  '
 style = "#69b53e bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "linuxmint" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.alpine]
-when = """ test "$STARSHIP_OS" "==" "alpine" """
 symbol = '  '
 style = "#0e567b bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "alpine" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.nixos]
-when = """ test "$STARSHIP_OS" "==" "nixos" """
 symbol = '  '
 style = "#7bb4dd bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "nixos" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.manjaro]
-when = """ test "$STARSHIP_OS" "==" "manjaro" """
 symbol = '  '
 style = "#34b959 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "manjaro" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.rhel]
-when = """ test "$STARSHIP_OS" "==" "rhel" """
 symbol = '  '
 style = "#e63129 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "rhel" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.ubuntu]
-when = """ test "$STARSHIP_OS" "==" "ubuntu" """
 symbol = '  '
 style = "#de5824 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "ubuntu" ]'
+shell = ["sh", "--noprofile", "--norc"]
 
 [custom.linux]
-when = """ test "$STARSHIP_OS" "==" "linux" """
 symbol = ' '
 style = "003 bold"
 os = "linux"
+when = '[ "$STARSHIP_OS" == "linux" ]'
+shell = ["sh", "--noprofile", "--norc"]
 

@@ -1,0 +1,212 @@
+# Starship for LINUX & macOS
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Change command timeout from 500 to 1000 ms
+command_timeout = 1000
+
+format = """\
+[╭╴](238)${custom.kali}${custom.arch}${custom.debian}${custom.raspbian}${custom.ubuntu}${custom.elementary}${custom.fedora}${custom.coreos}${custom.gentoo}${custom.mageia}${custom.centos}${custom.opensuse}${custom.sabayon}${custom.slackware}${custom.linuxmint}${custom.alpine}${custom.nixos}${custom.rhel}${custom.manjaro}${custom.macos}${custom.linux}\
+$username$hostname$sudo$directory$git_branch$git_status$shell$cmd_duration
+[╰─](238)$character"""
+
+# Change the default prompt characters
+[character]
+success_symbol = "[](238)"
+error_symbol = "[](238)"
+
+[hostname]
+ssh_only = false
+format = "on [$hostname](bold blue) "
+trim_at = ".skynet.systems"
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[cmd_duration]
+min_time = 500
+format = "took [$duration](bold yellow)"
+show_milliseconds = false
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+truncation_symbol = "…/"
+home_symbol = "ﴤ ~"
+read_only_style = "197"
+read_only = "  "
+format = "at [$path]($style)[$read_only]($read_only_style) "
+
+[shell]
+powershell_indicator = "via ﲵ"
+unknown_indicator = "mystery shell"
+style = "cyan bold"
+disabled = false
+zsh_indicator = ""
+
+[git_branch]
+symbol = " "
+format = "on [$symbol$branch]($style) "
+truncation_length = 10
+truncation_symbol = "…/"
+style = "bold green"
+
+[git_status]
+format = '[\($all_status$ahead_behind\)]($style) '
+style = "bold green"
+conflicted = "🏳"
+up_to_date = "  "
+untracked = "  "
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+stashed = " "
+modified = " "
+staged = '[++\($count\)](green)'
+renamed = "襁 "
+deleted = " "
+
+[python]
+symbol = " "
+python_binary = "python3"
+
+[custom.docker]
+description = "Shows the docker symbol if the current directory has Dockerfile or docker-compose.{yml,yaml} files"
+symbol = "'"
+style = "bright-blue bold"
+files = ["Dockerfile", "docker-compose.yml", "docker-compose.yaml"]
+when = """ command -v docker &> /dev/null; exit (echo $?); """
+
+########################### Linux & macOS CUSTOMIZATION
+
+[custom.macos]
+when = """ test "$STARSHIP_OS" "==" "macos" """
+symbol = ' '
+style = "244 bold"
+os = "macos"
+
+[custom.kali]
+when = """ test "$STARSHIP_OS" "==" "kali" """
+symbol = 'ﴣ '
+style = "253 bold"
+os = "linux"
+
+[custom.arch]
+when = """ test "$STARSHIP_OS" "==" "arch" """
+symbol = ' '
+style = "021 bold"
+os = "linux"
+
+[custom.debian]
+when = """ test "$STARSHIP_OS" "==" "debian" """
+symbol = ' '
+style = "125 bold"
+os = "linux"
+
+[custom.raspbian]
+when = """ test "$STARSHIP_OS" "==" "raspbian" """
+symbol = ' '
+style = "125 bold"
+os = "linux"
+
+[custom.elementary]
+when = """ test "$STARSHIP_OS" "==" "elementary" """
+symbol = '  '
+style = "033 bold"
+os = "linux"
+
+[custom.fedora]
+when = """ test "$STARSHIP_OS" "==" "fedora" """
+symbol = '  '
+style = "019 bold"
+os = "linux"
+
+[custom.coreos]
+when = """ test "$STARSHIP_OS" "==" "coreos" """
+symbol = '  '
+style = "033 bold"
+os = "linux"
+
+[custom.gentoo]
+when = """ test "$STARSHIP_OS" "==" "gentoo" """
+symbol = '  '
+style = "105 bold"
+os = "linux"
+
+[custom.mageia]
+when = """ test "$STARSHIP_OS" "==" "mageia" """
+symbol = '  '
+style = "025 bold"
+os = "linux"
+
+[custom.centos]
+when = """ test "$STARSHIP_OS" "==" "centos" """
+symbol = '  '
+style = "090 bold"
+
+[custom.opensuse]
+when = """ test "$STARSHIP_OS" "==" "opensuse" """
+symbol = '  '
+style = "070 bold"
+os = "linux"
+
+[custom.sabayon]
+when = """ test "$STARSHIP_OS" "==" "sabayon" """
+symbol = '  '
+style = "251 bold"
+os = "linux"
+
+[custom.slackware]
+when = """ test "$STARSHIP_OS" "==" "slackware" """
+symbol = '  '
+style = "105 bold"
+os = "linux"
+
+[custom.linuxmint]
+when = """ test "$STARSHIP_OS" "==" "linuxmint" """
+symbol = '  '
+style = "#69b53e bold"
+os = "linux"
+
+[custom.alpine]
+when = """ test "$STARSHIP_OS" "==" "alpine" """
+symbol = '  '
+style = "#0e567b bold"
+os = "linux"
+
+[custom.nixos]
+when = """ test "$STARSHIP_OS" "==" "nixos" """
+symbol = '  '
+style = "#7bb4dd bold"
+os = "linux"
+
+[custom.manjaro]
+when = """ test "$STARSHIP_OS" "==" "manjaro" """
+symbol = '  '
+style = "#34b959 bold"
+os = "linux"
+
+[custom.rhel]
+when = """ test "$STARSHIP_OS" "==" "rhel" """
+symbol = '  '
+style = "#e63129 bold"
+os = "linux"
+
+[custom.ubuntu]
+when = """ test "$STARSHIP_OS" "==" "ubuntu" """
+symbol = '  '
+style = "#de5824 bold"
+os = "linux"
+
+[custom.linux]
+when = """ test "$STARSHIP_OS" "==" "linux" """
+symbol = ' '
+style = "003 bold"
+os = "linux"
+

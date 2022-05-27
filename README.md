@@ -6,7 +6,7 @@
   />
 </p>
 
-# Starship Skynet Configurations
+# Custom Configurations
 
 Starship is a free opensource shell prompt available for Linux, Windows and MacOS. It is extremely fast, very light and highly customizable. It works for any shell including bash, zsh and Fish. Starship is designed to intelligently show you only the information you require while working.
 

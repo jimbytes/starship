@@ -31,7 +31,7 @@ show_always = true
 
 [sudo]
 style = "bold red"
-symbol = " "
+symbol = ""
 disabled = false
 
 [cmd_duration]
@@ -47,13 +47,6 @@ home_symbol = "ﴤ ~"
 read_only_style = "197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
-
-[shell]
-powershell_indicator = "via ﲵ"
-unknown_indicator = "mystery shell"
-style = "cyan bold"
-disabled = false
-zsh_indicator = ""
 
 [git_branch]
 symbol = " "

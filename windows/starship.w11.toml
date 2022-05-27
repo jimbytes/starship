@@ -7,7 +7,7 @@ add_newline = true
 command_timeout = 1000
 
 format = """\
-[╭╴](238)[](#0074cd)\
+[╭╴](238)[ ](#0074cd)\
 $username$hostname$sudo$directory$git_branch$git_status$cmd_duration
 [╰─](238)$character"""
 

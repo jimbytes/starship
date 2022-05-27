@@ -3,9 +3,9 @@ alias getpasswd='openssl rand -base64 32'
 alias internetip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Exa colors
-#alias ls='exa -abglh --group-directories-first --icons'
-#alias lst='exa -abglhT --group-directories-first --icons'
-#alias lsr='exa -abglhR --group-directories-first --icons'
+alias ls='exa -abglh --group-directories-first --icons'
+alias lst='exa -abglhT --group-directories-first --icons'
+alias lsr='exa -abglhR --group-directories-first --icons'
 
 
 

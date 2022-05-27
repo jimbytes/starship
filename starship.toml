@@ -44,11 +44,12 @@ read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [shell]
-powershell_indicator = "via ﲵ"
+powershell_indicator = "ﲵ "
 unknown_indicator = "mystery shell"
-style = "cyan bold"
+style = "197 bold"
 disabled = false
 zsh_indicator = ""
+bash_indicator = "bash "
 
 [git_branch]
 symbol = " "

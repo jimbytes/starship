@@ -12,6 +12,11 @@ if test -f "$ALIASFILE"; then
    . $ALIASFILE
 fi
 
+CUSTOMALIASFILE=$HOME/.zcustomalias
+if test -f "$CUSTOMALIASFILE"; then
+   . $CUSTOMALIASFILE
+fi
+
 # Find out which distribution we are running on
 LFILE="/etc/os-release"
 MFILE="/System/Library/CoreServices/SystemVersion.plist"

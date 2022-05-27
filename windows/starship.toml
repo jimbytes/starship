@@ -8,7 +8,7 @@ command_timeout = 1000
 
 format = """\
 [╭╴](238)[者](#00adee)\
-$username$hostname$sudo$directory$git_branch$git_status$shell$cmd_duration
+$username$hostname$sudo$directory$git_branch$git_status$cmd_duration
 [╰─](238)$character"""
 
 # Change the default prompt characters

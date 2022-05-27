@@ -66,7 +66,7 @@
                 },
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
-                "icon": "C:\\starship_custom\\windows\\ico_cmdazure.png",
+                "icon": "C:\\starship_custom\\windows\\ico_azure.png",
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },

@@ -90,7 +90,7 @@ when = """ command -v docker &> /dev/null; exit (echo $?); """
 symbol = ' '
 style = "244 bold"
 when = '[ "$STARSHIP_OS" == "macos" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 os = "macos"
 
 [custom.kali]
@@ -98,90 +98,90 @@ symbol = 'ﴣ '
 style = "253 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "kali" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.arch]
 symbol = ' '
 style = "021 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "arch" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.debian]
 symbol = ' '
 style = "125 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "debian" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.raspbian]
 symbol = ' '
 style = "125 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "raspbian" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.elementary]
 symbol = '  '
 style = "033 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "elementary" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.fedora]
 symbol = '  '
 style = "019 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "fedora" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.coreos]
 symbol = '  '
 style = "033 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "coreos" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.gentoo]
 symbol = '  '
 style = "105 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "gentoo" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.mageia]
 symbol = '  '
 style = "025 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "mageia" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.centos]
 symbol = '  '
 style = "090 bold"
 when = '[ "$STARSHIP_OS" == "centos" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.opensuse]
 symbol = '  '
 style = "070 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "opensuse" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.sabayon]
 symbol = '  '
 style = "251 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "sabayon" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.slackware]
 symbol = '  '
 style = "105 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "slackware" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 
 [custom.linuxmint]
@@ -189,47 +189,47 @@ symbol = '  '
 style = "#69b53e bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "linuxmint" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.alpine]
 symbol = '  '
 style = "#0e567b bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "alpine" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.nixos]
 symbol = '  '
 style = "#7bb4dd bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "nixos" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.manjaro]
 symbol = '  '
 style = "#34b959 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "manjaro" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.rhel]
 symbol = '  '
 style = "#e63129 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "rhel" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.ubuntu]
 symbol = '  '
 style = "#de5824 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "ubuntu" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 
 [custom.linux]
 symbol = ' '
 style = "003 bold"
 os = "linux"
 when = '[ "$STARSHIP_OS" == "linux" ]'
-shell = ["sh", "--noprofile", "--norc"]
+shell = ["bash", "--noprofile", "--norc"]
 

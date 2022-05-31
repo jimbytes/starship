@@ -6,8 +6,8 @@
   />
     <img
     width="400"
-    src="./resouces/shell.png"
-    alt="Starship – Cross-shell prompt"
+    src="https://github.com/jimbytes/starship/blob/main/resources/shell.png"
+    alt="Starship – Cross-shehell.pngll prompt"
   />
 </p>
 

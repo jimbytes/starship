@@ -3,7 +3,7 @@
     width="400"
     src="https://raw.githubusercontent.com/starship/starship/master/media/logo.png"
     alt="Starship – Cross-shell prompt"
-  />
+  /><br>
     <img
     width="400"
     src="https://github.com/jimbytes/starship/blob/main/resources/shell.png"

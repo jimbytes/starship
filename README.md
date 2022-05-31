@@ -4,6 +4,11 @@
     src="https://raw.githubusercontent.com/starship/starship/master/media/logo.png"
     alt="Starship – Cross-shell prompt"
   />
+    <img
+    width="400"
+    src="./resouces/shell.png"
+    alt="Starship – Cross-shell prompt"
+  />
 </p>
 
 # Custom Configurations
